@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEKRET® — графический и digital-дизайнер</title>
+<meta name="description" content="SEKRET® — графический и digital-дизайнер из Санкт-Петербурга: айдентика, леттеринг, рекламные визуалы, 3D и лендинги.">
+<meta name="theme-color" content="#F6F6F4">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/work/posters-grid.jpg">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="page-home">
+
+<a class="skip" href="#work">Перейти к работам</a>
+
+<!-- Шторка: лоадер при первом входе + переход между страницами -->
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="site-shell grid-12 curtain-inner">
+    <span class="cu-label" id="cuLabel">SEKRET®</span>
+    <span class="cu-title" id="cuTitle">Graphic systems</span>
+    <span class="cu-count" id="cuCount">000</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="site-shell grid-12 hdr-row">
+    <a class="hdr-brand" href="index.html#top" aria-label="SEKRET — на главную">SEKRET<sup>®</sup></a>
+    <p class="hdr-section" aria-hidden="true"><span id="hdrSection">00 — Hero</span></p>
+    <nav class="hdr-nav" aria-label="Основная навигация">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#index">Index</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <p class="hdr-status"><span class="dot" aria-hidden="true"></span>SPB <time id="clock">--:--</time></p>
+    <button class="hdr-menu" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <i class="hdr-progress" id="progress" aria-hidden="true"></i>
+</header>
+
+<nav class="menu" id="menu" aria-label="Мобильное меню" hidden>
+  <div class="site-shell menu-inner">
+    <a href="index.html#work"><span>01</span>Work</a>
+    <a href="index.html#index"><span>02</span>Index</a>
+    <a href="index.html#about"><span>05</span>About</a>
+    <a href="index.html#contact"><span>06</span>Contact</a>
+    <p class="menu-foot">Санкт-Петербург — удалённо<br><a href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer">Telegram ↗</a></p>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============ 00 / HERO — Rotary Case Index ============ -->
+  <section class="hero" id="top" data-theme="light" data-label="00 — Hero">
+    <div class="hero-stage" id="heroStage">
+
+      <div class="hero-cols site-shell grid-12" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="hero-inner site-shell">
+        <div class="hero-top grid-12">
+          <p class="ht-meta ht-meta--a"><span>SEKRET®</span><span>Graphic / Digital / 3D</span></p>
+          <p class="ht-meta ht-meta--c"><span>Based in</span><span>Saint Petersburg</span></p>
+          <p class="ht-meta ht-meta--d"><span>Portfolio</span><span>2023—2026 / <b id="projectCount">07</b> projects</span></p>
+        </div>
+
+        <div class="hero-main grid-12">
+          <div class="hero-left">
+            <h1 class="hero-title" id="heroTitle" aria-label="Graphic, digital, 3D systems">
+              <span class="htl htl--1" aria-hidden="true"><span class="lm"><span class="li">Graphic</span></span></span>
+              <span class="htl htl--2" aria-hidden="true"><span class="lm"><span class="li">Digital</span></span></span>
+              <span class="htl htl--3" aria-hidden="true"><span class="lm"><span class="li">3D</span></span><span class="lm lm--serif"><em class="li">systems</em></span></span>
+            </h1>
+
+            <div class="hero-case" id="heroCase">
+              <span class="hc-line" aria-hidden="true"><i id="hcProgress"></i></span>
+              <p class="hc-count"><span class="hc-swap" data-swap="no"><span class="sw">01</span></span><span class="hc-total"> / <span id="hcTotal">07</span></span><span class="hc-label">Active case</span></p>
+              <h2 class="hc-title"><span class="hc-swap" data-swap="title"><span class="sw">Sekret — постеры и леттеринг</span></span></h2>
+              <p class="hc-cat"><span class="hc-swap" data-swap="cat"><span class="sw">Graphic / Lettering — 2023—2025</span></span></p>
+              <p class="hc-text"><span class="hc-swap" data-swap="text"><span class="sw">Собрал авторский визуальный язык, который одинаково держится на постере, обложке трека и кузове реального фургона.</span></span></p>
+              <a class="case-link hc-link" id="hcLink" href="project-1.html">Открыть кейс <b>↗</b></a>
+            </div>
+          </div>
+
+          <div class="wheel" id="wheel" tabindex="0" data-cursor="dragv" role="group" aria-roledescription="carousel" aria-label="Кейсы: перетащите вверх или вниз, используйте стрелки или колесо мыши">
+            <div class="wheel-stage" id="wheelStage">
+              <div class="wheel-drum" id="wheelDrum">
+                <!-- статичная обложка без JS; с JS барабан строится из scripts/projects.js -->
+                <a class="wc is-active" href="project-1.html" aria-label="01 — Sekret — постеры и леттеринг"><span class="wc-media fit"><span class="crop" style="--sw:1800;--sh:1350;--x:186;--y:73;--w:1428;--h:952"><img src="assets/work/posters-grid.jpg" alt=""></span></span><span class="wc-no">01</span></a>
+              </div>
+            </div>
+            <div class="wheel-ui">
+              <span class="wu-hint"><span class="wu-d">Drag / scroll</span><span class="wu-m">Swipe</span></span>
+              <button class="wu-btn" type="button" data-step="-1" aria-label="Предыдущий кейс">↑</button>
+              <button class="wu-btn" type="button" data-step="1" aria-label="Следующий кейс">↓</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-foot grid-12">
+          <a class="hero-cue" href="#work"><span class="cue-arrow" aria-hidden="true">↓</span><span>Scroll<br>01 — Selected work</span></a>
+          <p class="hero-avail"><span class="dot" aria-hidden="true"></span>Open for projects</p>
+        </div>
+      </div>
+
+      <div class="hero-veil" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ 01 / SELECTED WORK ============ -->
+  <section class="selected" id="work" data-theme="dark" data-label="01 — Work">
+
+    <header class="sec-head site-shell grid-12">
+      <p class="sec-num" data-reveal="text"><span class="lm"><span class="li">(01)</span></span></p>
+      <h2 class="sec-title" data-reveal="text"><span class="lm"><span class="li">Selected</span></span> <span class="lm"><span class="li">work</span></span></h2>
+      <p class="sec-meta" data-reveal="fade">04 избранных кейса из 07<br>Графика · 3D · Web · Digital</p>
+      <i class="sec-rule" data-reveal="line"></i>
+    </header>
+
+    <!-- CASE 01 — media 8 cols + info 3 cols -->
+    <article class="case case--a site-shell grid-12">
+      <a class="case-media" href="project-1.html" data-cursor="view" aria-label="Открыть кейс: Sekret — постеры и леттеринг">
+        <span class="case-frame" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:186;--y:73;--w:1428;--h:1204"><img src="assets/work/posters-grid.jpg" alt="Серия из шести постеров Sekret Design: Dangerous Lyfe, ADL, Effect, Jellyfish, Fractal flower" loading="lazy"></span>
+        </span>
+        <span class="case-overlay">
+          <span class="co-tag">Арт-дирекшн · типографика · леттеринг</span>
+          <span class="co-text">Собрал авторский визуальный язык, который одинаково держится на постере, обложке трека и кузове реального фургона.</span>
+          <span class="co-cta">View project <b>↗</b></span>
+        </span>
+      </a>
+      <div class="case-info">
+        <span class="case-no" data-reveal="text"><span class="lm"><span class="li">01</span></span></span>
+        <h3 class="case-title"><a href="project-1.html">Sekret — постеры и леттеринг</a></h3>
+        <dl class="case-meta">
+          <div><dt>Category</dt><dd>Graphic / Lettering</dd></div>
+          <div><dt>Year</dt><dd>2023—2025</dd></div>
+          <div><dt>Tools</dt><dd>Photoshop, Illustrator, Procreate</dd></div>
+        </dl>
+        <p class="case-statement">Личный почерк на стыке граффити-культуры и графического дизайна — от ч/б постеров до росписи фургона петербургских райтеров.</p>
+        <a class="case-link" href="project-1.html">Смотреть кейс <b>↗</b></a>
+      </div>
+    </article>
+
+    <!-- CASE 02 — full-width media + floating caption -->
+    <article class="case case--b site-shell grid-12">
+      <div class="case-headline">
+        <span class="case-no" data-reveal="text"><span class="lm"><span class="li">02</span></span></span>
+        <h3 class="case-title case-title--xl" data-reveal="text"><span class="lm"><span class="li"><a href="project-4.html">Sekret Module 25</a></span></span></h3>
+        <p class="case-kicker">3D / Product<br>2025 — Blender</p>
+      </div>
+      <a class="case-media" href="project-4.html" data-cursor="view" aria-label="Открыть кейс: Sekret Module 25">
+        <span class="case-frame" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1027;--x:150;--y:116;--w:1500;--h:845"><img src="assets/work/3d-cover.jpg" alt="Модульное складное устройство Sekret Module 25: разборная схема, три стадии складывания и крупные планы на фоне неба" loading="lazy"></span>
+        </span>
+        <span class="case-overlay">
+          <span class="co-tag">Моделирование · материалы · свет · анимация</span>
+          <span class="co-text">Показал несуществующий продукт так, чтобы он ощущался осязаемым: материал и разборная схема становятся главным аргументом.</span>
+          <span class="co-cta">View project <b>↗</b></span>
+        </span>
+      </a>
+      <div class="case-float">
+        <p class="cf-label">Challenge</p>
+        <p class="cf-text">Сделать вымышленное устройство убедительным — чтобы зритель поверил в материал, вес и механику продукта.</p>
+        <a class="case-link" href="project-4.html">Смотреть кейс <b>↗</b></a>
+      </div>
+    </article>
+
+    <!-- CASE 03 — sticky media + scrolling story -->
+    <article class="case case--c site-shell grid-12">
+      <div class="case-sticky">
+        <a class="case-media" href="project-5.html" data-cursor="view" aria-label="Открыть кейс: Женская безопасность">
+          <span class="case-frame" data-reveal="media">
+            <span class="crop" style="--sw:1100;--sh:1037;--x:0;--y:0;--w:1100;--h:940"><img src="assets/work/landing-cover.jpg" alt="Первый экран лендинга «Женская безопасность»: крупная типографика, смартфон с картой безопасного маршрута" loading="lazy"></span>
+          </span>
+          <span class="case-overlay">
+            <span class="co-tag">UX-структура · веб-дизайн</span>
+            <span class="co-text">Выстроил иерархию лендинга так, чтобы ключевые функции считывались с первого экрана, а тон оставался спокойным.</span>
+            <span class="co-cta">View project <b>↗</b></span>
+          </span>
+        </a>
+      </div>
+      <div class="case-story">
+        <span class="case-no" data-reveal="text"><span class="lm"><span class="li">03</span></span></span>
+        <h3 class="case-title"><a href="project-5.html">Женская безопасность</a></h3>
+        <dl class="case-meta">
+          <div><dt>Category</dt><dd>Web / Landing</dd></div>
+          <div><dt>Year</dt><dd>2025</dd></div>
+          <div><dt>Tools</dt><dd>Figma</dd></div>
+        </dl>
+        <div class="story-step" data-reveal="fade">
+          <p class="ss-label"><span>A</span>Challenge</p>
+          <p>Рассказать о сервисе безопасности без давления и тревожности — и ясно показать, что он умеет.</p>
+        </div>
+        <div class="story-step" data-reveal="fade">
+          <p class="ss-label"><span>B</span>Response</p>
+          <p>Модульная сетка, крупная типографика и мягкая палитра; карта маршрутов, SOS и комьюнити-чаты — три опорных блока.</p>
+        </div>
+        <div class="story-step" data-reveal="fade">
+          <p class="ss-label"><span>C</span>Value</p>
+          <p>Оффер, функции и тарифы считываются последовательно, а визуальный тон поддерживает доверие к продукту.</p>
+        </div>
+        <div class="case-aux"><div data-reveal="media">
+          <span class="crop" style="--sw:1100;--sh:917;--x:0;--y:290;--w:1100;--h:627"><img src="assets/work/landing-02.jpg" alt="Блок лендинга «Всё будет хорошо» с крупной типографикой" loading="lazy"></span>
+        </div></div>
+        <a class="case-link" href="project-5.html">Смотреть кейс <b>↗</b></a>
+      </div>
+    </article>
+
+    <!-- CASE 04 — triptych of vertical cards -->
+    <article class="case case--d site-shell grid-12">
+      <div class="case-headline">
+        <span class="case-no" data-reveal="text"><span class="lm"><span class="li">04</span></span></span>
+        <h3 class="case-title case-title--xl" data-reveal="text"><span class="lm"><span class="li"><a href="project-7.html">Анатомия сидений</a></span></span></h3>
+        <p class="case-kicker">Commercial / Maps<br>Тюнинг-ателье — СПб</p>
+      </div>
+      <div class="tri">
+        <a class="case-media tri-card tri-card--1" href="project-7.html" data-cursor="view" aria-label="Открыть кейс: Анатомия сидений — обложка серии">
+          <span class="case-frame" data-reveal="media"><img src="assets/work/tuning/1.jpg" alt="Карточка «Изменение анатомии сидений»: металлическая типографика и рендер кресла" width="650" height="1160" loading="lazy"></span>
+          <span class="case-overlay"><span class="co-tag">Карточка 01 — обложка</span><span class="co-text">Оффер, география и три гарантии считываются до первого скролла.</span><span class="co-cta">View project <b>↗</b></span></span>
+        </a>
+        <a class="case-media tri-card tri-card--2" href="project-7.html" data-cursor="view" aria-label="Открыть кейс: Анатомия сидений — как это работает">
+          <span class="case-frame" data-reveal="media"><img src="assets/work/tuning/3.webp" alt="Карточка «Как это работает?»: разобранный рендер кресла и три шага процесса" width="650" height="1160" loading="lazy"></span>
+          <span class="case-overlay"><span class="co-tag">Карточка 03 — процесс</span><span class="co-text">Технология объяснена через разобранное кресло: текст привязан к слоям.</span><span class="co-cta">View project <b>↗</b></span></span>
+        </a>
+        <a class="case-media tri-card tri-card--3" href="project-7.html" data-cursor="view" aria-label="Открыть кейс: Анатомия сидений — разница в антропометрии">
+          <span class="case-frame" data-reveal="media"><img src="assets/work/tuning/6.webp" alt="Карточка «Разница в антропометрии» с автомобилями" width="650" height="1160" loading="lazy"></span>
+          <span class="case-overlay"><span class="co-tag">Карточка 06 — контекст</span><span class="co-text">Причина проблемы объяснена раньше, чем решение.</span><span class="co-cta">View project <b>↗</b></span></span>
+        </a>
+      </div>
+      <div class="tri-info">
+        <p class="tri-statement" data-reveal="fade">Перевёл технически сложную услугу в последовательную визуальную историю: пользователь быстро понимает проблему, процесс и ценность доработки.</p>
+        <dl class="case-meta tri-meta">
+          <div><dt>Category</dt><dd>Commercial / Maps</dd></div>
+          <div><dt>Format</dt><dd>Серия из 6 карточек 9:16</dd></div>
+          <div><dt>Client</dt><dd>Тюнинг-ателье</dd></div>
+        </dl>
+        <a class="case-link tri-link" href="project-7.html">Смотреть кейс <b>↗</b></a>
+      </div>
+    </article>
+
+    <div class="selected-end site-shell grid-12">
+      <p class="se-note">Ещё 03 проекта под NDA — материалы показываю по запросу.</p>
+      <a class="se-link" href="#index">Все проекты <span>(07)</span> <b>↓</b></a>
+    </div>
+  </section>
+
+  <!-- ============ 02 / PROJECT INDEX ============ -->
+  <section class="index" id="index" data-theme="light" data-label="02 — Index">
+    <header class="sec-head site-shell grid-12">
+      <p class="sec-num" data-reveal="text"><span class="lm"><span class="li">(02)</span></span></p>
+      <h2 class="sec-title" data-reveal="text"><span class="lm"><span class="li">Index</span></span></h2>
+      <p class="sec-meta" data-reveal="fade"><span id="ixCount">07</span> проектов<br>04 кейса + 03 под NDA</p>
+      <i class="sec-rule" data-reveal="line"></i>
+    </header>
+
+    <div class="site-shell">
+      <div class="ix-head grid-12" aria-hidden="true">
+        <span class="ix-c-no">No.</span>
+        <span class="ix-c-title">Project</span>
+        <span class="ix-c-cat">Category</span>
+        <span class="ix-c-year">Year</span>
+        <span class="ix-c-status">Status</span>
+      </div>
+      <ol class="ix-list" id="ixList"><!-- строится из scripts/projects.js --></ol>
+    </div>
+
+    <div class="ix-preview" id="ixPreview" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ 03 / EXPERTISE ============ -->
+  <section class="xp" id="expertise" data-theme="light" data-label="03 — Expertise">
+    <header class="sec-head site-shell grid-12">
+      <p class="sec-num" data-reveal="text"><span class="lm"><span class="li">(03)</span></span></p>
+      <h2 class="sec-title" data-reveal="text"><span class="lm"><span class="li">Expertise</span></span></h2>
+      <p class="sec-meta" data-reveal="fade">06 направлений<br>от знака до интерфейса</p>
+      <i class="sec-rule" data-reveal="line"></i>
+    </header>
+
+    <div class="xp-body site-shell grid-12">
+      <span class="xp-word" id="xpWord" aria-hidden="true">identity</span>
+
+      <aside class="xp-aside" aria-hidden="true">
+        <div class="xp-preview" id="xpPreview">
+          <span class="frame is-active crop" style="--sw:1400;--sh:646;--x:330;--y:0;--w:1070;--h:540"><img src="assets/work/sekret-cluster.jpg" alt=""></span>
+          <span class="frame crop" style="--sw:1800;--sh:1350;--x:1150;--y:77;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt=""></span>
+          <span class="frame crop" style="--sw:900;--sh:684;--x:0;--y:0;--w:900;--h:592"><img src="assets/work/3d-folded.jpg" alt=""></span>
+          <span class="frame crop" style="--sw:1100;--sh:1037;--x:0;--y:0;--w:1100;--h:940"><img src="assets/work/landing-cover.jpg" alt=""></span>
+          <span class="frame crop" style="--sw:984;--sh:516;--x:48;--y:0;--w:936;--h:414"><img src="assets/work/3d-lens.jpg" alt=""></span>
+          <span class="frame crop" style="--sw:1800;--sh:1350;--x:1150;--y:685;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt=""></span>
+        </div>
+        <p class="xp-caption"><span>Fragment</span><span id="xpCaption">Sekret marks — lettering</span></p>
+      </aside>
+
+      <ol class="xp-list" id="xpList">
+        <li class="xp-row is-active" data-word="identity" data-caption="Sekret marks — lettering">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">01</span><span class="xp-name">Айдентика и логотипы</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">Знаки, леттеринг и фирменные системы, которые узнаются с одного взгляда и одинаково держатся на визитке, упаковке и фасаде.</p>
+            <p class="xp-tools">Illustrator / Figma</p>
+          </div></div>
+        </li>
+        <li class="xp-row" data-word="campaign" data-caption="Bro we're waiting for ADL — poster">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">02</span><span class="xp-name">Рекламные креативы</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">Кампании и баннеры с жёсткой иерархией: оффер считывается первым, бренд — сразу за ним. Адаптация под любые площадки и пропорции.</p>
+            <p class="xp-tools">Photoshop / After Effects</p>
+          </div></div>
+        </li>
+        <li class="xp-row" data-word="commerce" data-caption="Sekret Module 25 — product render">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">03</span><span class="xp-name">Карточки товаров и digital-графика</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">Модульные шаблоны для маркетплейсов: единая сетка и шрифтовая иерархия, которые масштабируются на весь каталог.</p>
+            <p class="xp-tools">Photoshop / Figma</p>
+          </div></div>
+        </li>
+        <li class="xp-row" data-word="interface" data-caption="Женская безопасность — landing">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">04</span><span class="xp-name">Лендинги и вёрстка</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">От структуры и прототипа до живой страницы: ясный сценарий, крупная типографика и аккуратный адаптив.</p>
+            <p class="xp-tools">Figma / HTML / CSS / JS</p>
+          </div></div>
+        </li>
+        <li class="xp-row" data-word="depth" data-caption="Lens study — Blender">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">05</span><span class="xp-name">3D и генеративная графика</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">Предметные рендеры, материалы и свет; генеративные эксперименты для постеров и motion.</p>
+            <p class="xp-tools">Blender / TouchDesigner</p>
+          </div></div>
+        </li>
+        <li class="xp-row" data-word="content" data-caption="Fractal [ai] flower — poster">
+          <button class="xp-head" type="button" aria-expanded="false"><span class="xp-no">06</span><span class="xp-name">Визуалы для соцсетей и презентаций</span><span class="xp-icon" aria-hidden="true"></span></button>
+          <div class="xp-detail"><div class="xp-detail-in">
+            <p class="xp-desc">Посты, сторис и питч-деки, которые держат фирменный стиль и не скатываются в шаблон.</p>
+            <p class="xp-tools">Illustrator / Premiere Pro</p>
+          </div></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 04 / VISUAL LAB ============ -->
+  <section class="lab" id="lab" data-theme="dark" data-label="04 — Lab">
+    <header class="sec-head site-shell grid-12">
+      <p class="sec-num" data-reveal="text"><span class="lm"><span class="li">(04)</span></span></p>
+      <h2 class="sec-title" data-reveal="text"><span class="lm"><span class="li">Visual</span></span> <span class="lm"><span class="li">lab</span></span></h2>
+      <p class="sec-meta" data-reveal="fade">Постеры, леттеринг, 3D, интерфейсы.<br>Живая практика между заказами.</p>
+      <i class="sec-rule" data-reveal="line"></i>
+    </header>
+
+    <div class="lab-bar site-shell grid-12">
+      <p class="lab-hint"><span class="lab-hint-d">Drag / scroll</span><span class="lab-hint-m">Swipe</span> ↔</p>
+      <p class="lab-count"><b id="labNow">01</b> / <span id="labTotal">11</span></p>
+      <span class="lab-progress" aria-hidden="true"><i id="labProgress"></i></span>
+    </div>
+
+    <div class="lab-track" id="labTrack" data-cursor="drag" tabindex="0" role="region" aria-label="Visual lab — горизонтальная лента экспериментов">
+      <figure class="lab-item lab-item--l lab-item--top">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:190;--y:77;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt="Постер Dangerous Lyfe" loading="lazy"></span>
+          <span class="lab-alt"><img src="assets/work/poster-adl.jpg" alt="" loading="lazy"></span>
+          <span class="lab-tag">Poster ⇄ alt</span>
+        </div>
+        <figcaption><span>L.01</span>Dangerous Lyfe<em>Poster</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--m lab-item--bottom">
+        <div class="lab-media lab-media--paper" data-reveal="media">
+          <span class="crop" style="--sw:1400;--sh:646;--x:330;--y:0;--w:1070;--h:540"><img src="assets/work/sekret-cluster.jpg" alt="Кластер леттеринг-знаков Sekret" loading="lazy"></span>
+          <span class="lab-tag">Lettering</span>
+        </div>
+        <figcaption><span>L.02</span>Sekret marks<em>Lettering</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--s lab-item--top">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:670;--y:685;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt="Постер Jellyfish" loading="lazy"></span>
+          <span class="lab-tag">AI / poster</span>
+        </div>
+        <figcaption><span>L.03</span>Jellyfish<em>AI / Poster</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--m lab-item--center">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:984;--sh:516;--x:48;--y:0;--w:936;--h:414"><img src="assets/work/3d-lens.jpg" alt="3D: крупный план линзы" loading="lazy"></span>
+          <span class="lab-alt"><img src="assets/work/3d-sky.jpg" alt="" loading="lazy"></span>
+          <span class="lab-tag">3D ⇄ alt</span>
+        </div>
+        <figcaption><span>L.04</span>Lens study<em>3D / Blender</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--l lab-item--top">
+        <div class="lab-media lab-media--paper" data-reveal="media">
+          <span class="crop" style="--sw:987;--sh:933;--x:16;--y:0;--w:722;--h:933"><img src="assets/work/truck-lettering.jpg" alt="Леттеринг «Графферство оборот» и роспись фургона" loading="lazy"></span>
+          <span class="lab-tag">Street</span>
+        </div>
+        <figcaption><span>L.05</span>Графферство оборот<em>Lettering / Street</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--s lab-item--bottom">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:190;--y:685;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt="Типографический постер Effect" loading="lazy"></span>
+          <span class="lab-tag">Type</span>
+        </div>
+        <figcaption><span>L.06</span>Effect<em>Typography</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--l lab-item--center">
+        <div class="lab-media lab-media--paper" data-reveal="media">
+          <span class="crop" style="--sw:984;--sh:684;--x:0;--y:0;--w:984;--h:588"><img src="assets/work/3d-exploded.jpg" alt="3D: разборная схема устройства" loading="lazy"></span>
+          <span class="lab-alt"><img src="assets/work/3d-folded.jpg" alt="" loading="lazy"></span>
+          <span class="lab-tag">Depth ⇄ alt</span>
+        </div>
+        <figcaption><span>L.07</span>Exploded view<em>3D / Product</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--m lab-item--top">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:1150;--y:685;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt="Постер Fractal [ai] flower" loading="lazy"></span>
+          <span class="lab-tag">AI / poster</span>
+        </div>
+        <figcaption><span>L.08</span>Fractal [ai] flower<em>AI / Poster</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--m lab-item--bottom">
+        <div class="lab-media lab-media--paper" data-reveal="media">
+          <span class="crop" style="--sw:1100;--sh:917;--x:0;--y:290;--w:1100;--h:627"><img src="assets/work/landing-02.jpg" alt="Интерфейс: блок «Всё будет хорошо»" loading="lazy"></span>
+          <span class="lab-tag">Interface</span>
+        </div>
+        <figcaption><span>L.09</span>Всё будет хорошо<em>Web / Type</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--s lab-item--center">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:1800;--sh:1350;--x:670;--y:77;--w:460;--h:588"><img src="assets/work/posters-grid.jpg" alt="Постер ADL" loading="lazy"></span>
+          <span class="lab-tag">Poster</span>
+        </div>
+        <figcaption><span>L.10</span>ADL<em>Poster</em></figcaption>
+      </figure>
+
+      <figure class="lab-item lab-item--l lab-item--top">
+        <div class="lab-media" data-reveal="media">
+          <span class="crop" style="--sw:900;--sh:516;--x:0;--y:0;--w:900;--h:414"><img src="assets/work/3d-sky.jpg" alt="3D: устройство на фоне неба" loading="lazy"></span>
+          <span class="lab-tag">3D</span>
+        </div>
+        <figcaption><span>L.11</span>Sky render<em>3D / Blender</em></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 05 / ABOUT ============ -->
+  <section class="about" id="about" data-theme="light" data-label="05 — About">
+    <div class="site-shell">
+      <div class="about-top grid-12">
+        <p class="sec-num" data-reveal="text"><span class="lm"><span class="li">(05)</span></span></p>
+        <p class="about-kicker" data-reveal="fade">About / Approach</p>
+        <i class="sec-rule" data-reveal="line"></i>
+      </div>
+
+      <h2 class="about-statement grid-12" data-reveal="text">
+        <span class="as as--1"><span class="lm"><span class="li">Я собираю</span></span></span>
+        <span class="as as--2"><span class="lm"><span class="li">визуальные</span></span></span>
+        <span class="as as--3"><span class="lm"><span class="li">системы,</span></span></span>
+        <span class="as as--4"><span class="lm"><span class="li">а не просто</span></span><span class="lm lm--serif"><em class="li">картинки.</em></span></span>
+      </h2>
+
+      <div class="about-body grid-12">
+        <div class="about-text" data-reveal="fade">
+          <p class="about-lead">Привет, я Ильяс — графический и digital-дизайнер из Санкт-Петербурга. Работаю на стыке брендинга, графики и 3D: от знака и леттеринга до рекламных визуалов, лендингов и предметных рендеров.</p>
+          <p>Больше 4 лет в дизайне, высшее образование по направлению «Прикладная информатика в дизайне». Моя задача — чтобы результат на 100% устраивал заказчика: правки не ограничены, каждая работа доводится до конца.</p>
+        </div>
+        <dl class="about-meta" data-reveal="fade">
+          <div><dt>Focus</dt><dd>Айдентика, леттеринг, рекламная графика, 3D, веб</dd></div>
+          <div><dt>Tools</dt><dd>Photoshop, Illustrator, InDesign, Figma, After Effects, Premiere Pro, Procreate, Blender</dd></div>
+          <div><dt>Location</dt><dd>Санкт-Петербург — работаю удалённо</dd></div>
+          <div><dt>Status</dt><dd><span class="dot" aria-hidden="true"></span>Открыт к новым проектам</dd></div>
+        </dl>
+      </div>
+
+      <ol class="approach grid-12">
+        <li data-reveal="fade"><span>01</span><b>Разбор</b>Задача, аудитория, контекст бренда и носители — до первого эскиза.</li>
+        <li data-reveal="fade"><span>02</span><b>Система</b>Сетка, типографика, цвет и правила — не один макет, а логика.</li>
+        <li data-reveal="fade"><span>03</span><b>Носители</b>Адаптация системы на все нужные форматы без потери характера.</li>
+        <li data-reveal="fade"><span>04</span><b>Передача</b>Исходники и понятные правила, чтобы стиль жил дальше без меня.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 06 / CONTACT ============ -->
+  <section class="contact" id="contact" data-theme="accent" data-label="06 — Contact">
+    <div class="site-shell contact-inner">
+      <div class="contact-top grid-12">
+        <p class="sec-num">(06)</p>
+        <p class="ct-meta">Contact</p>
+        <p class="ct-meta ct-meta--r">SPB / Remote — отвечаю в течение дня</p>
+      </div>
+
+      <h2 class="contact-title grid-12" data-reveal="wipe">
+        <span class="ctl ctl--1"><span class="lm"><span class="li">Есть проект&nbsp;—</span></span></span>
+        <span class="ctl ctl--2"><span class="lm lm--serif"><em class="li" id="ctWord">обсудим.</em></span></span>
+      </h2>
+
+      <a class="contact-cta" href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer" data-cursor="write">
+        <span class="cc-text">Написать в Telegram</span>
+        <span class="cc-arrow" aria-hidden="true"><i class="cc-line"></i>↗</span>
+      </a>
+
+      <ul class="contact-links grid-12">
+        <li><span class="cl-k">Telegram</span><a href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer" data-cursor="write">@sekretiktg <b>↗</b></a></li>
+        <li><span class="cl-k">Email</span><span class="cl-row"><a href="mailto:mail@example.com" data-cursor="write">mail@example.com</a><button class="copy" type="button" data-copy="mail@example.com">Copy</button></span></li>
+        <li><span class="cl-k">Behance</span><a href="#" target="_blank" rel="noopener noreferrer" data-cursor="open">behance.net/… <b>↗</b></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER — compact system closure ============ -->
+<footer class="footer" data-theme="dark" data-label="06 — Contact">
+  <div class="site-shell">
+    <div class="footer-top grid-12">
+      <nav class="ft-col ft-col--nav" aria-label="Навигация в подвале">
+        <a href="index.html#work">Work</a><a href="index.html#index">Index</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="ft-col ft-col--social">
+        <a href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="mailto:mail@example.com">Email ↗</a><a href="#" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+      </div>
+      <a class="ft-top" href="#top">Back to top <b>↑</b></a>
+    </div>
+    <p class="footer-mark" data-reveal="track" aria-hidden="true">SEKRET<sup>®</sup></p>
+    <div class="footer-bottom grid-12">
+      <span>© 2026 Sekret Design</span>
+      <span>Graphic / Digital / 3D</span>
+      <span class="fb-r">Design &amp; code / SEKRET</span>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/projects.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
