@@ -279,7 +279,9 @@
       const probe = 30, mid = view.h * 0.42;
       for (const s of sections) {
         const r = s.getBoundingClientRect();
-        if (r.top <= probe && r.bottom > probe) theme = s.dataset.theme;
+        if (r.top <= probe && r.bottom > probe) {
+          theme = s.classList.contains('brief-panel') && innerWidth > 1000 ? 'split' : s.dataset.theme;
+        }
         if (r.top <= mid && r.bottom > mid && s.dataset.label) { lab = s.dataset.label; id = s.id; }
       }
       if (hdr.dataset.on !== theme) hdr.dataset.on = theme;
