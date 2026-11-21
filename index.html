@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/work/posters-grid.jpg">
 <link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/contact-form.css">
 </head>
 <body class="page-home">
 
@@ -501,15 +502,32 @@
         <p class="ct-meta ct-meta--r">SPB / Remote — отвечаю в течение дня</p>
       </div>
 
-      <h2 class="contact-title grid-12" data-reveal="wipe">
-        <span class="ctl ctl--1"><span class="lm"><span class="li">Есть проект&nbsp;—</span></span></span>
-        <span class="ctl ctl--2"><span class="lm lm--serif"><em class="li" id="ctWord">обсудим.</em></span></span>
-      </h2>
-
-      <a class="contact-cta" href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer" data-cursor="write">
-        <span class="cc-text">Написать в Telegram</span>
-        <span class="cc-arrow" aria-hidden="true"><i class="cc-line"></i>↗</span>
-      </a>
+      <div class="contact-brief grid-12">
+        <div class="brief-intro">
+          <h2 class="contact-title" data-reveal="wipe">
+            <span class="ctl ctl--1"><span class="lm"><span class="li">Есть<br>проект —</span></span></span>
+            <span class="ctl ctl--2"><span class="lm lm--serif"><em class="li" id="ctWord">обсудим.</em></span></span>
+          </h2>
+          <p class="brief-note">Расскажите о задаче.<br>Вместе найдём её визуальный язык.</p>
+        </div>
+        <form class="contact-form" id="contactForm" action="/api/contact" method="post">
+          <p class="brief-caption">Заявка на дизайн-проект <span>* обязательные поля</span></p>
+          <fieldset class="brief-fields">
+            <legend class="brief-sr">Данные заявки</legend>
+            <div class="brief-field"><label for="brief-name">Имя *</label><input id="brief-name" name="name" placeholder="Ваше имя" maxlength="100" aria-describedby="error-name" required minlength="2" autocomplete="name"><span class="brief-error" id="error-name" aria-live="polite"></span></div>
+            <div class="brief-field"><label for="brief-email">Email *</label><input id="brief-email" name="email" placeholder="name@example.com" maxlength="254" aria-describedby="error-email" type="email" required autocomplete="email"><span class="brief-error" id="error-email" aria-live="polite"></span></div>
+            <div class="brief-field"><label for="brief-telegram">Telegram</label><input id="brief-telegram" name="telegram" placeholder="@username" maxlength="64" aria-describedby="error-telegram" autocomplete="off"><span class="brief-error" id="error-telegram" aria-live="polite"></span></div>
+            <div class="brief-field"><label for="brief-deadline">Сроки</label><input id="brief-deadline" name="deadline" placeholder="Например: до конца месяца" maxlength="120" aria-describedby="error-deadline" ><span class="brief-error" id="error-deadline" aria-live="polite"></span></div>
+            <div class="brief-field brief-field--wide"><label for="brief-service">Что нужно сделать? *</label><select id="brief-service" name="service" aria-describedby="error-service" required><option value="">Выберите направление</option><option value="Брендинг">Брендинг</option><option value="Веб-дизайн">Веб-дизайн</option><option value="Графический дизайн">Графический дизайн</option><option value="3D / Motion">3D / Motion</option><option value="Другое">Другое</option></select><span class="brief-error" id="error-service" aria-live="polite"></span></div>
+            <div class="brief-field brief-field--wide"><label for="brief-message">О проекте *</label><textarea id="brief-message" name="message" rows="3" required minlength="20" maxlength="800" placeholder="Коротко опишите задачу и желаемый результат" aria-describedby="error-message brief-count"></textarea><span class="brief-count" id="brief-count">0 / 800</span><span class="brief-error" id="error-message" aria-live="polite"></span></div>
+            <div class="brief-field"><label for="brief-budget">Бюджет</label><select id="brief-budget" name="budget" aria-describedby="error-budget" ><option value="Не определён">Не определён</option><option value="до 30 000 ₽">до 30 000 ₽</option><option value="30 000–60 000 ₽">30 000–60 000 ₽</option><option value="60 000 ₽+">60 000 ₽+</option></select><span class="brief-error" id="error-budget" aria-live="polite"></span></div>
+          </fieldset>
+          <button class="brief-submit" type="submit" disabled>ОТПРАВИТЬ ЗАЯВКУ ↗</button>
+          <p class="brief-status" id="brief-status" role="status" aria-live="polite"></p>
+          <noscript><p>Для отправки формы включите JavaScript или напишите в Telegram ниже.</p></noscript>
+          <a class="brief-alternative" href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer">Или написать в Telegram ↗</a>
+        </form>
+      </div>
 
       <ul class="contact-links grid-12">
         <li><span class="cl-k">Telegram</span><a href="https://t.me/sekretiktg" target="_blank" rel="noopener noreferrer" data-cursor="write">@sekretiktg <b>↗</b></a></li>
@@ -544,5 +562,6 @@
 
 <script src="scripts/projects.js"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/contact-form.js"></script>
 </body>
 </html>

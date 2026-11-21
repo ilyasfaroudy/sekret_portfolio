@@ -1,0 +1,5 @@
+
+# Local secrets and Vercel state
+.env
+.env.*
+.vercel/
